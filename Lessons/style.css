@@ -48,3 +48,111 @@ p {
     color: #FFFFFF; 
     text-transform: uppercase;
 }
+
+.header {
+    border: solid 1px turquoise;
+}
+
+.footer {
+    border: solid 1px red;
+    clear: both;
+}
+
+.footer-top {
+    width: 80%;
+    margin-left: 10%;
+    border: solid 1px sandybrown;
+}
+
+.footer-bottom {
+    width: 80%;
+    margin-left: 10%;
+    border: solid 1px sandybrown;
+}
+
+.footer-info {
+    width: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: solid rosybrown;
+}
+
+.footer-reserved {
+    border: solid 1px seagreen;
+    margin-bottom: 5%;
+}
+
+.heading {
+    border: solid 1px red;
+}
+
+.heading-page {
+    width: 80%;
+    margin-left: 10%;
+    border: solid 1px royalblue;
+}
+
+.heading-info {
+    border: solid 1px green;
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.first-paragraph {
+    border: solid 1px blue;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.cards {
+    border: solid 1px green;
+    margin-bottom: 2%;
+}
+
+.card {
+    border: solid 1px purple;
+    width: 30%;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.second-paragraph {
+    border: solid 1px red;
+    width: 80%;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+.inform-title {
+    border: solid 1px springgreen;
+    
+}
+
+.inform-contacts {
+    border: solid 1px blue;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.inform-contacts-contact {
+    border: solid 1px brown;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 2%;
+    float: left;
+}
+
+.feedback {
+    border: solid 1px brown;
+    width: 40%;
+    height: 538px;
+    margin-left: 55%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
