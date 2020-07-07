@@ -9,84 +9,91 @@
 </head>
 
 <body>
-    <div class="header">
-        <ul>
+    <div class="container">
+        <ul class="header">
             <li>
                 <a href="index.html">Главная</a>
             </li>
             <li>
                 <a href="contact.html">Контакты</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="catalog/product.html">Каталог</a>
-            </li>
+            </li> -->
         </ul>
-    </div>
-    <div class="inform">
-        <div class="inform-title">
-            <h2 class="contact_title">Contakt Us</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eligendi!
-            </p>
-        </div>
-        <div class="inform-contacts">
-            <div class="inform-contacts-contact">
-                <img src="img/images.jpeg" alt="contact">
-                <h4 class="subtitle">Address</h4>
+        <div class="inform">
+            <div class="inform-title">
+                <h2 class="contact_title">Contaсt Us</h2>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </p>
-                <h4 class="subtitle">Phone</h4>
-                <ul>
-                    <li>9025552611</li>
-                    <li>9025552612</li>
-                </ul>
-                <h4 class="subtitle">Online service</h4>
-                <ul>
-                    <li>
-                        <a href="https://www.artlebedev.ru/typograf/" target="_blank">Site</a>
-                    </li>
-
-                    <li>
-                        <a href="mailto:mail@google.com">Mail</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="feedback">
-                <h4 class="subtitle">Send us message</h4>
-                <form action="#">
-                    Full name <input class="form" type="text" placeholder="Jon"><br>
-                    Email <input class="form" type="email" placeholder="mail@mail.ru"><br>
-                    Message <textarea class="form" cols="30" rows="10"></textarea><br>
-                    <button class="submit" type="submit">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="footer-top">
-            <div class="footer-info">
-                <h3 class="paragraph">Это подвал</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eligendi!
                 </p>
             </div>
+            <div class="inform-contacts">
+                <div class="inform-card">
+                    <img src="img/images.jpeg" alt="contact">
+                    <h4 class="subtitle">Address</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing.
+                    </p>
+                    <h4 class="subtitle">Phone</h4>
+                    <ul>
+                        <li>9025552611</li>
+                        <li>9025552612</li>
+                    </ul>
+                    <h4 class="subtitle">Online service</h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.artlebedev.ru/typograf/" target="_blank">Site</a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:mail@google.com">Mail</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="inform-card">
+                    <h4 class="subtitle">Send us message</h4>
+                    <form action="#">
+                        Full name <input class="form" type="text" placeholder="Jon"><br>
+                        Email <input class="form" type="email" placeholder="mail@mail.ru"><br>
+                        Message <textarea class="form" cols="30" rows="10"></textarea><br>
+                        <button class="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <hr>
-        <div class="footer-bottom">
-            <ol>Список с контактами
-                <li>Сотрудник 1</li>
-                <li>Номер телефона</li>
-                <li>Адрес электронной почты</li>
-            </ol>
-            <ol>Список с контактами 2
-                <li>Сотрудник 2</li>
-                <li>Номер телефона 2</li>
-                <li>Адрес электронной почты 2</li>
-            </ol>
-            <div class="footer-reserved">
-                <p>Все права защищены</p>
+        <section class="contacts_map_wrap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8477.362012456679!2d37.617307791310886!3d55.75219585167178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1593253182374!5m2!1sru!2sru"
+                width="900" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+        </section>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <h3 class="paragraph" class="footer-title">Это подвал</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <ul class="contact">Список с контактами 1:
+                    <li>Сотрудник 1</li>
+                    <li>Номер телефона 1</li>
+                    <li>Адрес электронной почты 1</li>
+                </ul>
+                <ul class="contact">Список с контактами 2:
+                    <li>Сотрудник 2</li>
+                    <li>Номер телефона 2</li>
+                    <li>Адрес электронной почты 2</li>
+                </ul>
+                <div class="footer-reserved">
+                    <p>&copy; Все права защищены</p>
+                </div>
             </div>
         </div>
     </div>

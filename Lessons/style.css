@@ -2,6 +2,36 @@ body {
     font-family: sans-serif;
 }
 
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.heading {
+    border: solid 1px red;
+}
+
+.heading-page {
+    /* width: 80%; */
+    /* margin-left: 10%; */
+    border: solid 1px royalblue;
+}
+
+.header {
+    border: solid 1px turquoise;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-right: 5%;
+}
+
+.heading-info {
+    border: solid 1px green;
+    width: 430px;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
 p {
     font-size: 16px; 
     line-height: 26px;
@@ -11,6 +41,14 @@ p {
 .main {
     font-size: 64px; 
     color: #1F3F68;
+}
+
+h1 {
+    width: 510px;
+}
+
+.main-text {
+    width: 425px;
 }
 
 .contact_title {
@@ -49,32 +87,39 @@ p {
     text-transform: uppercase;
 }
 
-.header {
-    border: solid 1px turquoise;
-}
-
 .footer {
     border: solid 1px red;
     clear: both;
 }
 
+.footer-title {
+    width: 340px;
+}
+
 .footer-top {
-    width: 80%;
-    margin-left: 10%;
+    /* width: 80%;
+    margin-left: 10%; */
     border: solid 1px sandybrown;
 }
 
 .footer-bottom {
-    width: 80%;
-    margin-left: 10%;
+    /* width: 80%;
+    margin-left: 10%; */
     border: solid 1px sandybrown;
 }
 
 .footer-info {
-    width: 40%;
+    width: 495px;
     margin-top: 3%;
     margin-bottom: 3%;
     border: solid rosybrown;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 .footer-reserved {
@@ -82,50 +127,45 @@ p {
     margin-bottom: 5%;
 }
 
-.heading {
-    border: solid 1px red;
-}
-
-.heading-page {
-    width: 80%;
-    margin-left: 10%;
-    border: solid 1px royalblue;
-}
-
-.heading-info {
-    border: solid 1px green;
-    width: 50%;
-    margin-top: 5%;
-    margin-bottom: 20%;
-}
-
 .first-paragraph {
     border: solid 1px blue;
-    width: 80%;
-    margin-left: 10%;
+    /* width: 80%;
+    margin-left: 10%; */
     margin-top: 5%;
 }
 
 .cards {
     border: solid 1px green;
     margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
 }
 
 .card {
     border: solid 1px purple;
-    width: 30%;
-    margin-left: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
+    flex-grow: 1;
+    flex-basis: 200px;
 }
 
 .second-paragraph {
     border: solid 1px red;
-    width: 80%;
+    /* width: 80%; */
     margin-top: 1%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     margin-bottom: 2%;
 }
+
+/* .inform {
+    border: solid 1px turquoise;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-right: 5%;
+} */
 
 .inform-title {
     border: solid 1px springgreen;
@@ -134,25 +174,26 @@ p {
 
 .inform-contacts {
     border: solid 1px blue;
-    width: 80%;
-    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.inform-contacts-contact {
+.inform-card {
     border: solid 1px brown;
-    width: 40%;
-    margin-left: 5%;
-    margin-top: 2%;
-    float: left;
-}
-
-.feedback {
-    border: solid 1px brown;
-    width: 40%;
-    height: 538px;
-    margin-left: 55%;
     margin-top: 2%;
     margin-bottom: 2%;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.contacts_map_wrap {
+    margin: 60px auto;
+    padding: 0;
+    /* width: calc((50% - 200px)*2); */
+    display: flex;
+    justify-content: space-around;
 }
