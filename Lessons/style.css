@@ -1,6 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: sans-serif;
-    /* Blue_01 */
     color: #1F3F68;    
 }
 
@@ -9,16 +13,16 @@ body {
     margin: 0 auto;    
 }
 
-/* One page */
+/* Page one*/
 
 .heading-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* height: 100vh; */
 }
 
 .heading-page {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
     margin-bottom: 64px;
 }
@@ -36,6 +40,7 @@ body {
     background-image: url(./img/heading-illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 p {
     font-size: 16px;
@@ -74,7 +79,7 @@ p {
     margin-bottom: 64px;
 }
 
-/* Two page */
+/* Page two*/
 
 .paragraph-title {
     font-weight: 300;
@@ -96,6 +101,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 359px;
+    height: 480px;
     padding: 0px 32px;
     box-sizing: border-box;
     background: #FFFFFF;
@@ -119,6 +125,7 @@ p {
     color: #1F3F68;
     letter-spacing: 0.05em;
     margin-bottom: 14px;
+    margin-top: 49px;
 }
 
 .card-link {
@@ -127,9 +134,10 @@ p {
     letter-spacing: 0.05em;
     color: #5A98D0;
     text-decoration: none;
+    margin-top: 27px;
 }
 
-/* Three page */
+/* Page three*/
 
 .second-paragraph {
     margin-bottom: 112px;
@@ -148,7 +156,7 @@ p {
     margin-bottom: 64px;
 }
 
-.project-img {
+.project-imgs {
     width: 100%;
 }
 
@@ -163,6 +171,7 @@ p {
 }
 
 .img-text-1 {
+    position: absolute;
     top: 64px;
     right: 64px;
 }
@@ -176,12 +185,10 @@ p {
     position: relative;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .two-img {
-    flex-direction: column;
-    flex-grow: 1;
+    position: relative;
 }
 
 .two-img-right {
@@ -189,12 +196,14 @@ p {
 }
 
 .img-text-2 {
+    position: absolute;
     left: 32px;
     top: 32px;
 }
 
 .img-text-3 {
-    right: 218px;
+    position: absolute;
+    left: 32px;
     top: 32px;
 }
 
@@ -211,7 +220,6 @@ p {
     display: flex;
     justify-content: space-between;
     height: 391px;
-    /* flex-wrap: wrap; */
 }
 
 .footer-line {
@@ -251,12 +259,14 @@ p {
 }
 
 .footer-button {
-    width: 236.63px;
+    box-sizing: border-box;
+    width: 236px;
     height: 56px;
+    padding: 15px 80px;
     background: #5A98D0;
     margin-top: 165px;
     font-size: 16px;
-    line-height: 55px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
@@ -305,6 +315,7 @@ p {
     color: #FFFFFF;
     opacity: 0.4;
 }
+
 .form {
     border: 1px solid #356EAD; 
     box-sizing: border-box; 
@@ -322,6 +333,180 @@ p {
     text-align: center; 
     color: #FFFFFF; 
     text-transform: uppercase;
+}
+
+@media(max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px; 
+    }
+    .second-paragraph {
+        margin-bottom: 109px;
+    }
+    .heading-info {
+        background-position: right 165px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 32px;
+    }
+    .footer-top {
+        margin-top: 0px;
+        margin-left: 92px;
+        height: 321px;
+    }
+    .footer-button {
+        box-sizing: border-box;
+        width: 133px;
+        height: 31px;
+        padding: 3px 10px;
+        line-height: 25px;
+        margin-right: 92px;
+    }
+    .footer-title {
+        text-align: left;
+    }
+    .footer-info{
+        height: 257px;
+        width: 336px;
+        padding-top: 47px;
+    }
+    .footer-line {
+        top: 321px;
+    }
+    .footer-bottom {
+        margin-left: 92px;
+    }
+    .footer-contact {
+        margin-bottom: 20px;
+        width: 515px;
+    }
+    .footer-reserved {
+        margin-top: 44px;
+    }
+}
+
+@media(max-width: 667px) {
+    .heading-page {
+        min-height: 376px;
+        margin-bottom: 41px;
+        box-sizing: border-box;
+    }
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header {
+        margin-top: 16px;
+    }
+    .heading-title {
+        width: 100%;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin-bottom: 12px;
+    }
+    .heading-text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+    }
+    .heading-info {
+        background: none;
+        margin-top: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+    .heading-button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 4px 8px;
+        margin-bottom: 40px;
+    }
+    .second-paragraph {
+        margin-bottom: 64px;
+    }
+    .second-text{
+        width: 100%;
+        margin-bottom: 82px;
+    }
+    .img-text {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        top: 26px;
+        left: 16px;
+    }
+    .img-text-1{
+        top: 16px;
+        right: 16px;
+    }
+    
+    .second-img-2 {
+        display: block 
+    }
+    .two-img {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .two-img-right {
+        margin-left: 0;
+    }
+    .project-img {
+        margin-bottom: 0;
+    }
+    .paragraph-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 32px;
+        letter-spacing: normal;
+    }
+    .cards {
+        margin-bottom: 32px;
+    }
+    .card {
+        width: 100%;
+    }
+    .footer-top {
+        height: 310px;
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+        display: block;
+    }
+    .footer-info {
+        height: 180px;
+        padding-top: 18px;
+    }
+    .footer-button{
+        width: 108px;
+        height: 31px;
+        margin-top: 40px;
+        margin-left: 118px;
+    }
+    .footer-bottom {
+        height: 232px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .footer {
+        height: 542px;
+    }
+    /* .top-flex {
+        display: block;
+    } */
 }
 
 /* Page "Contacts" */
